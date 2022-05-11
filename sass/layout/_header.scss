@@ -23,22 +23,22 @@
 .header {
   border-bottom: solid 1px #ececec;
 }
-.header__nav,
+.nav,
 .nav {
   @include flexCenter;
 }
-.site-nav,
-.page-header {
+.nav__list,
+.contacts {
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
   margin-left: auto;
   padding: 0;
 }
-.site-nav__item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav__link {
+.nav__link {
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -56,7 +56,7 @@
     fill: $accent-text-color;
   }
 }
-.site-nav__link.current::after {
+.nav__link.current::after {
   left: 0;
   bottom: -33px;
   position: absolute;
@@ -68,15 +68,15 @@
   border-radius: 2px;
 }
 
-.page-header__link:hover .page-header__icon {
+.contacts__link:hover .contacts__icon {
   color: $accent-text-color;
   fill: $accent-text-color;
 }
-.page-header__item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
   margin-left: auto;
 }
-.page-header__link {
+.contacts__link {
   @include flexCenter;
   color: $secondary-text-color;
   font-weight: 500;
@@ -90,7 +90,7 @@
     fill: $accent-text-color;
   }
 }
-.page-header__icon {
+.contacts__icon {
   fill: $secondary-text-color;
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
